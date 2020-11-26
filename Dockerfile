@@ -1,6 +1,6 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+FROM mcr.microsoft.com/dotnet/sdk:5.0
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash \
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash \
     && apt-get install -y nodejs libgdiplus \
     && rm -rf /var/lib/apt/lists/* \
     && npm i -g yarn
