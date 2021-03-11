@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0
+FROM mcr.microsoft.com/dotnet/sdk:5.0-focal
 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash \
     && curl -sL https://sentry.io/get-cli/ | bash \
